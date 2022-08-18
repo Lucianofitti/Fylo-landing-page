@@ -1,0 +1,446 @@
+:root{
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+--DesaturatedBlue: hsl(238, 22%, 44%);
+--BrightBlue: hsl(224, 93%, 58%);
+--ModerateCyan: hsl(170, 45%, 43%);
+--LightGrayishBlue: hsl(240, 75%, 98%);
+--LightGray: hsl(0, 0%, 75%);
+--open-sans: 'Open Sans', sans-serif;
+--raleway: 'Raleway', sans-serif;
+
+}
+*, ::before, ::after{
+    font-family: 'raleway';
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    margin-bottom: 4.2rem;
+}
+main{
+    width: 100%;
+    margin-inline: auto;
+}
+nav{
+    width: 90%;
+    margin-inline: auto;
+    padding-top: .7em;
+    padding-right: .4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 25%;
+    max-width: 7.4rem;
+    height: 25%;
+    object-fit: cover;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.1rem;
+}
+nav a{
+    font-size: .9rem;
+    color: var(--VeryDarkBlue);
+    text-decoration: none;
+}
+.section-1{
+    width: 90%;
+    margin-inline: auto;
+    padding-bottom: 11rem;
+}
+.section-1 figure{
+    margin-inline: auto;
+    width: 90%;
+    max-width: 30rem;
+}
+.section-1 figure img{
+    width: 100%;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-inline: auto;
+}
+.texts h1{
+    margin-bottom: 1rem;
+    line-height: 2.2rem;
+    font-family: var(--raleway);
+    color: var(--VeryDarkBlue);
+}
+.texts p{
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    font-family: var(--raleway);
+    line-height: 1.45rem;
+    color: var(--VeryDarkBlue);
+}
+input{
+    font-family: var(--open-sans);
+    width: 100%;
+    margin-inline: auto;
+    outline: none;
+    box-shadow: 0 0 1px  black;
+    padding: .5rem 1rem;
+}
+.cta, .cta-1{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    gap: 1rem;
+    width: 90%;
+}
+.cta a, .cta-1 a{
+    text-decoration: none;
+    font-family: var(--raleway);
+    color: white;
+    background-color: var(--BrightBlue);
+    border-radius: 5px;
+    padding: .6em 2em;
+    transition: all .6s;
+}
+.cta a:hover, .cta-1 a:hover{
+    background-color: hsl(224, 89%, 50%);
+    transform: scale(1.1);
+}
+.wave{
+    
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    top: -6rem;
+    left: 0;
+    background-image: url(bg-curve-mobile.svg);
+}
+
+.section-2{
+    width: 100%;
+    background-color: var(--LightGrayishBlue);
+    position: relative;
+    
+}
+.illustration-2{
+    max-width: 30rem;
+    margin-inline: auto;
+     width: 100%;
+}
+.illustration-2 img{
+    width: 100%;
+}
+.texts-2{
+    margin-top: 5.7rem;
+    margin-bottom: 1.3rem;
+    padding-inline: 1rem;
+    text-align: center;
+    margin-inline: auto;
+    width: 100%;
+}
+.texts-2 h2{
+    font-family: var(--raleway);
+    font-size: 1.1rem;
+    color: var(--VeryDarkBlue);
+}
+.texts-2 p{
+    width: 100%;
+    margin-inline: auto;
+    line-height: 24px;
+    font-family: var(--raleway);
+    color: var(--DesaturatedBlue);
+}
+.texts-2 a{
+    width: 50%;
+    gap: .3rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-bottom: 1px solid ;
+    font-family: var(--open-sans);
+    color: var(--ModerateCyan);
+}
+.testimonial{
+    margin-block: 3em;
+    background-color: white;
+    padding-inline: 1.5em;
+    padding-block: 1.1em;
+    width: 90%;
+    margin-inline: auto;
+    box-shadow: 0 0 3px var(--LightGray) ;
+    transition: all .6s;
+}
+.testimonial:hover{
+    box-shadow: 0 0 5px var(--VeryDarkBlue);
+    transform: scale(1.1);
+}
+.testimonial:hover::after{
+    content: ":)";
+}
+#tsp{
+    margin-inline: auto;
+    margin-top: .4em;
+    font-size: .8rem;
+    line-height: 26px;
+    font-family: var(--open-sans);
+    color: var(--VeryDarkBlue);
+    width: 100%;
+}
+.person{
+    display: flex;
+    align-items: center;
+}
+.person img{
+    width: 12%;
+    height: 12%;
+    max-width: 2rem;
+    margin-right: .7em;
+    border-radius: 50%;
+}
+.person div p{
+    margin: 0;
+}
+#kyle{
+    font-family: var(--raleway);
+    color: var(--VeryDarkBlue);
+    font-size: .9rem;
+    font-weight: 700;
+}
+#founder{
+    font-size: .7rem;
+    margin-top: .3em;
+    font-family: var(--open-sans);
+    color: var(--DesaturatedBlue);
+    font-weight: 400;
+}
+.section-3{
+    background-color: var(--DesaturatedBlue);
+    padding-block: 2em;
+    padding-inline: 1em;
+    
+}
+.section-3 h2{
+    font-size: 1.3rem;
+    margin-inline: auto;
+    width: 80%;
+    font-family: var(--raleway);
+    color: var(--LightGrayishBlue);
+}
+.section-3 p{
+    margin-inline: auto;
+    width: 89%;
+    font-family: var(--open-sans);
+    color: var(--LightGrayishBlue);
+}
+.cta-1{
+    font-size: .9rem;
+    width: 80%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: var(--VeryDarkBlue);
+    padding: 3.5rem 2.1rem 2rem;
+    color: white;
+}
+footer p{
+    font-family: var(--open-sans);
+}
+#logo2{
+    margin-bottom: 1.3em;
+}
+.icon{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    
+}
+.icon img{
+    width: 7%;
+    height: 7%;
+    max-width: 23px;
+}
+.icon p{
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+.footer-4{
+    margin-top: 1em;
+    text-align: center;
+    width: 50%;
+    margin-inline: auto;
+}
+.footer-4 img{
+    max-width: 30px;
+    padding: .3em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid;
+}
+@media (min-width:1000px){
+    header{
+        
+        padding-top: 1.4rem;
+    }
+    nav{
+        padding-inline: 1.3rem;
+    }
+    nav ul{
+        gap: 2.6rem;
+    }
+    .section-1{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .section-1 .texts{
+        width: 40%;
+        margin-inline: 0;
+        margin-left: 1.5rem;
+        
+    }
+    .section-1 figure{
+        margin-left: 6rem;
+        margin-top: 0;
+    }
+    .section-1 h1{
+        
+        text-align: left;
+        line-height: 42px;
+        font-size: 1.9em;
+        width: 95%;
+    }
+    .section-1 p{
+        text-align: left;
+        width: 90%;
+        font-size: 1.2em;
+        margin-bottom: .9rem;
+    }
+    .section-1 .cta{
+        margin-left: 0;
+        display: flex;
+        gap: .8em;
+        flex-direction: row;
+    }
+    .section-1 .cta input{
+        width: 100%;
+        margin: 0;
+        max-width: 20rem;
+    }
+    .section-1 .cta a{
+        width: 60%;
+        max-width: 15rem;
+    }
+    .wave{
+    
+        width: 100%;
+        height: 65px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100% 100px;
+        top: -4rem;
+        left: 0;
+        background-image: url(bg-curve-mobile.svg);
+    }
+    .section-2{
+        padding-inline: 5em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+    }
+    .texts-container{
+        width: 50%;
+    }
+    .illustration-2{
+        margin-left: 0;
+    }
+    .section-2 .texts-2 *{
+        margin-left: 0;
+        text-align: left;
+    }
+    .section-2 .texts-2 h2{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .section-2 .texts-2 p{
+        width: 90%;
+    }
+    .section-2 .texts-2 a{
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 30%;
+    }
+    .section-2 .testimonial{
+        margin-top: 1.5rem;
+        width: 50%;
+        margin-left: .5em;
+    }
+    .section-3{
+        padding-inline: 1.5rem;
+        padding-block: 4rem;
+        display: flex;
+        gap: 6rem;
+        align-items: center;
+        flex-direction: row;
+    }
+    .section-3 .texts{
+        text-align: left;
+        flex: 50%;
+    }
+    .section-3 .texts h2{
+        font-size: 1.85rem;
+        margin-bottom: 1rem;
+    }
+    .section-3 .texts p{
+        width: 80%;
+        margin-top: 0;
+    }
+    .section-3 *{
+        margin-inline: 0;
+    }
+    .section-3 .cta-1{
+        
+        flex: 50%;
+    }
+    .section-3 input{
+        width: 75%;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: 0 0 0;
+    }
+    .section-3 a{
+        padding-inline: 0;
+        padding-block: .9em;
+        text-align: center;
+        width: 30%;
+    }
+    footer{
+    
+        padding: 3rem;
+        padding-top: 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-2, .footer-3{
+        margin-top: 4.5rem;
+    }
+    .footer-4{
+        width: 10%;
+        margin-inline: 0;
+        margin-top: 5.5rem;
+        position: relative;
+        right: 90px;
+    }
+    
+}
